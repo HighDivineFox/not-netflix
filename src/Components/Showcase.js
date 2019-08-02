@@ -54,7 +54,7 @@ class Showcase extends Component {
 
     loadShowcaseItem(){
         let randomIndex = Math.ceil(Math.random() * 10000)
-        let url = "http://api.tvmaze.com/shows/" + randomIndex
+        let url = "https://api.tvmaze.com/shows/" + randomIndex
 
         fetch(url, {mode: 'cors'})
             .then((response) => {
