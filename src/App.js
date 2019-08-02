@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header'
+import SignIn from './Components/SignIn'
+import Content from './Components/Content'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      isLoggedIn: false,
+      userObj: null
+    }
+
+    this.selectProfile = this.selectProfile.bind(this)
+  }  
+
+  render(){
+    return (
+      <div className="App wrapper">
+        <Header isLoggedIn={this.state.isLoggedIn} userData={this.state.userObj}/>
+        <SignIn isLoggedIn={this.state.isLoggedIn} selectUser={this.selectProfile}/>
+        <Content isLoggedIn={this.state.isLoggedIn} userData={this.state.userObj}/>
+      </div>
+    );
+  }
+
+  selectProfile(userData){
+    this.setState(
+      {
+        isLoggedIn:true,
+        userObj: userData
+      }
+    )
+  }
 }
 
 export default App;

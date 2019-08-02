@@ -1,33 +1,286 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  background-image: linear-gradient(-180deg, #1A1A1A, #1F1F1F);
+}
+
 .App {
+  color: aliceblue;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-small{
+  background: -webkit-linear-gradient(rgb(235,0,0),rgb(125,0,0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2rem;
+  padding: 0px 60px;
+  font-weight: bold;
+}
+
+.logo-large{
+  background: -webkit-linear-gradient(rgb(235,0,0),rgb(125,0,0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 5rem;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.absCenter{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.flexCol{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.flexRow{
+  display: flex;
+  width: 85vw;  
+}
+
+.wrapped{
+  flex-flow: wrap
+}
+
+.non-wrapped{
+  flex-flow: nowrap
+}
+
+.flexSpaced{
+  justify-content: space-around;
+}
+
+.largeText{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.mediumText{
+  font-size: 2rem;
+}
+
+.fitText{
+  text-align: center;
+  font-size: 2.25vw;
+}
+
+.textCentered{
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.userAvatar{
+  width: 200px;
+  height: 200px;
+  margin: 10px 20px;
+  border: 5px solid rgba(255,255,255,0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.userAvatar:hover{
+  border: 5px solid rgba(255,255,255,0.8);
+}
+
+.linkStyles:hover{
+  cursor: pointer;
+}
+
+.horiCentered{
+  margin: 0 auto;
+}
+
+.extraMarginBot{
+  margin-bottom: 50px;
+}
+
+.extraMarginTop{
+  margin-top: 50px;
+}
+
+.border50{
+  border: 1px solid rgba(255,255,255,0.5)
+}
+
+.border50:hover{
+  border: 1px solid rgba(255,255,255,1)
+}
+
+.padded{
+  padding: 10px;
+}
+
+.contentWidth{
+  width: max-content;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.navbar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row nowrap;
+
+  justify-content: flex-start;
+  align-items: stretch;
+
+  height: 75px;
+  line-height: 75px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-item{
+  padding: 0px 25px;
+  text-align: center;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-item:hover{
+  font-weight: bold;
+}
+
+.navbar-item img{
+  border-radius: 50%;
+  transform: translateY(25%);
+}
+
+.right{
+  float: right;
+}
+
+.showcase-item{
+  width: 100%;
+  height: 650px;
+}
+
+.showcase-img{
+  width: 100%;
+  height: auto;
+}
+
+.content-row{
+  padding: 10px 50px;
+}
+
+.media-item:hover{
+  animation: grow 0.4s ease-in-out 0.25s forwards;
+}
+
+@keyframes grow{
+  from{
+    transform: scale(1, 1);
+    z-index: 1;
   }
-  to {
-    transform: rotate(360deg);
+  to{
+    transform: scale(1.4,1.4);
+    z-index: 2;
   }
+}
+
+.media-item-img{
+  margin: 2px;
+}
+
+.media-item-title{
+  position: absolute;
+  padding: 5px;
+
+  top: 70%;
+
+  font-size: 2rem;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.showcaseWrapper{
+  position: relative;
+}
+
+.showcaseInformationWrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+
+  
+  background-image: linear-gradient(30deg, rgba(0,0,0,0.3), rgba(0,0,0,0));
+
+  position: absolute;
+  height: 100%;
+
+  padding: 30px;
+}
+
+.showcaseTitle{
+  font-size: 500%;
+  font-weight: 600;
+
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;  
+}
+
+.showcaseSummary{
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+
+  width: 50%;
+}
+
+.rel{
+  position: relative;
+}
+
+.media-logo{
+  background: -webkit-linear-gradient(rgb(235,0,0),rgb(125,0,0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: absolute;
+
+  font-size: 4rem;
+  font-weight: bold;
+  
+  top: -15px;
+  left: 5px;
+}
+
+.button{
+  padding: 10px 50px;
+  margin: 25px 25px 15px 0px;
+  
+  background: rgba(0,0,0,0.3);
+  border: none;
+
+  color: aliceblue;
+
+  font-size: 1.7rem;
+  font-weight: 500;
+
+  border-radius: 5px;
+}
+
+.button:hover{
+  background: rgba(255,255,255,255.3);
+  color: black;
 }
