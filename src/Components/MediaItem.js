@@ -66,6 +66,7 @@ class MediaItem extends Component {
 
                 if(response !== 200){
                     console.log('API Error')
+                    console.log(response.statusText)   
                 }
 
                 response.json()
