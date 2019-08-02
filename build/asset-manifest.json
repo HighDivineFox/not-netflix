@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/not-netflix/static/css/main.16e69600.chunk.css",
-    "main.js": "/not-netflix/static/js/main.b250a782.chunk.js",
-    "main.js.map": "/not-netflix/static/js/main.b250a782.chunk.js.map",
-    "runtime~main.js": "/not-netflix/static/js/runtime~main.eca71758.js",
-    "runtime~main.js.map": "/not-netflix/static/js/runtime~main.eca71758.js.map",
-    "static/js/2.f0927397.chunk.js": "/not-netflix/static/js/2.f0927397.chunk.js",
-    "static/js/2.f0927397.chunk.js.map": "/not-netflix/static/js/2.f0927397.chunk.js.map",
-    "index.html": "/not-netflix/index.html",
-    "precache-manifest.4419aa71b94fa3d782ee9ac33f84995e.js": "/not-netflix/precache-manifest.4419aa71b94fa3d782ee9ac33f84995e.js",
-    "service-worker.js": "/not-netflix/service-worker.js",
-    "static/css/main.16e69600.chunk.css.map": "/not-netflix/static/css/main.16e69600.chunk.css.map"
+    "main.css": "/not-netflix/build/static/css/main.16e69600.chunk.css",
+    "main.js": "/not-netflix/build/static/js/main.a29f3455.chunk.js",
+    "main.js.map": "/not-netflix/build/static/js/main.a29f3455.chunk.js.map",
+    "runtime~main.js": "/not-netflix/build/static/js/runtime~main.2c1978e6.js",
+    "runtime~main.js.map": "/not-netflix/build/static/js/runtime~main.2c1978e6.js.map",
+    "static/js/2.f0927397.chunk.js": "/not-netflix/build/static/js/2.f0927397.chunk.js",
+    "static/js/2.f0927397.chunk.js.map": "/not-netflix/build/static/js/2.f0927397.chunk.js.map",
+    "index.html": "/not-netflix/build/index.html",
+    "precache-manifest.07a9ec4008b0c7d44424bf266d902ea3.js": "/not-netflix/build/precache-manifest.07a9ec4008b0c7d44424bf266d902ea3.js",
+    "service-worker.js": "/not-netflix/build/service-worker.js",
+    "static/css/main.16e69600.chunk.css.map": "/not-netflix/build/static/css/main.16e69600.chunk.css.map"
   }
 }
