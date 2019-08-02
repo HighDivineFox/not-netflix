@@ -64,7 +64,7 @@ class MediaItem extends Component {
         fetch('https://baconipsum.com/api/?type=meat-and-filler')
             .then((response) => {
 
-                if(response !== 200){
+                if(response.status !== 200){
                     console.log('API Error')
                     console.log(response.statusText)   
                 }
