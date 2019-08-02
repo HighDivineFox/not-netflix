@@ -2,8 +2,9 @@
   "name": "not-netflix",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://HighDivineFox.github.io/not-netflix",
+  "homepage": "https://highdivinefox.github.io/not-netflix",
   "dependencies": {
+    "gh-pages": "^2.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
