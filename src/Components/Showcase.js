@@ -56,11 +56,12 @@ class Showcase extends Component {
         let randomIndex = Math.ceil(Math.random() * 10000)
         let url = "http://api.tvmaze.com/shows/" + randomIndex
 
-        fetch(url)
+        fetch(url, {mode: 'cors'})
             .then((response) => {
 
                 if(response.status !== 200){
                     console.log('API Error')
+                    console.log(response.statusText)                    
                 }
 
                 response.json()
@@ -76,8 +77,9 @@ class Showcase extends Component {
                             showCaseSummary: sum
                         })
                     })
-            }).catch(() => {
-                console.log("API Error: Something went wrong");
+            }).catch((err) => {
+                console.log("API Error: Something went wrong")
+                console.log(err)
             })
     }
 }
